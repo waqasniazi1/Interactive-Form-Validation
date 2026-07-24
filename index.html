@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SInteractive Form Validation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="card">
+    <header class="card__head">
+      <p class="eyebrow">SoftGrowTech &middot; Task 1 &middot; Project 2</p>
+      <h1>Create your account</h1>
+      <p class="sub">Every field checks itself as you type. Nothing submits until it's all correct.</p>
+    </header>
+
+    <div class="banner" id="successBanner">✓ Account created — all fields passed validation.</div>
+
+    <form id="regForm" novalidate>
+
+      <div class="field" id="nameField">
+        <input type="text" id="name" placeholder=" " autocomplete="off">
+        <label for="name">Full name</label>
+        <p class="msg" id="nameMsg"></p>
+      </div>
+
+      <div class="field" id="usernameField">
+        <input type="text" id="username" placeholder=" " autocomplete="off">
+        <label for="username">Username</label>
+        <p class="msg" id="usernameMsg"></p>
+      </div>
+
+      <div class="field" id="emailField">
+        <input type="text" id="email" placeholder=" " autocomplete="off">
+        <label for="email">Email address</label>
+        <p class="msg" id="emailMsg"></p>
+      </div>
+
+      <div class="field" id="phoneField">
+        <input type="text" id="phone" placeholder=" " autocomplete="off">
+        <label for="phone">Phone number</label>
+        <p class="hint">Format: 03XXXXXXXXX (11 digits)</p>
+        <p class="msg" id="phoneMsg"></p>
+      </div>
+
+      <div class="field" id="dobField">
+        <input type="date" id="dob" placeholder=" ">
+        <label for="dob" class="always-up">Date of birth</label>
+        <p class="msg" id="dobMsg"></p>
+      </div>
+
+      <div class="field" id="passwordField">
+        <input type="password" id="password" placeholder=" " autocomplete="off">
+        <label for="password">Password</label>
+        <div class="strength"><span></span><span></span><span></span><span></span></div>
+        <p class="msg" id="passwordMsg"></p>
+      </div>
+
+      <div class="field" id="confirmField">
+        <input type="password" id="confirm" placeholder=" " autocomplete="off">
+        <label for="confirm">Confirm password</label>
+        <p class="msg" id="confirmMsg"></p>
+      </div>
+
+      <label class="checkbox" id="termsField">
+        <input type="checkbox" id="terms">
+        <span>I agree to the <strong>Terms &amp; Privacy Policy</strong></span>
+      </label>
+      <p class="msg" id="termsMsg"></p>
+
+      <button type="submit" id="submitBtn" disabled>Create account</button>
+    </form>
+
+    <p class="foot-note">BUILT WITH HTML &middot; CSS &middot; JAVASCRIPT</p>
+  </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
